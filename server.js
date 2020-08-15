@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 // initialize Express server
 const app = express()
 
-// require router
+//  require router
 const users = require('./routes/users')
 
 // middleware to allow to CORS requests
@@ -47,4 +47,4 @@ app.use('/users', users)
 
 
 // start our sever
-app.listen(process.env.PORT || 3000, () => console.log(`With my toes on port ${process.env.PORT} its such a lovely view 🎧`))
+app.listen(process.env.PORT || 3001, () => console.log(`With my toes on port ${process.env.PORT} its such a lovely view 🎧`))
